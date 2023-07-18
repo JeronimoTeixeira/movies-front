@@ -5,10 +5,11 @@ import { ErrorComponent } from './components/error/error.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { SuccessComponent } from './components/success/success.component';
 
 @NgModule({
-  declarations: [ErrorComponent],
+  declarations: [ErrorComponent, SuccessComponent],
   imports: [CommonModule, HttpClientModule, MatDialogModule, MatButtonModule],
-  exports: [ErrorComponent]
+  exports: [ErrorComponent],
 })
 export class SharedModule {}

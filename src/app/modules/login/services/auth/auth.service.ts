@@ -18,4 +18,8 @@ export class AuthService {
     return this.httpWrapperService.post("/login", login);
   }
 
+  register(login: ILogin): Observable<IAccesToken>{
+    return this.httpWrapperService.post("/user/register", login);
+  }
+
 }

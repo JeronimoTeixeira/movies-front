@@ -6,14 +6,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatButtonModule} from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
 import { SharedModule } from '../shared/shared.module';
-
-
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, RegisterComponent],
   imports: [
     FormsModule,
     SharedModule,
@@ -23,7 +22,7 @@ import { SharedModule } from '../shared/shared.module';
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    MatButtonModule
-  ]
+    MatButtonModule,
+  ],
 })
-export class LoginModule { }
+export class LoginModule {}
